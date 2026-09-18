@@ -1,0 +1,29 @@
+{
+  "name": "azuska-z-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "verifier": "tsc --noEmit",
+    "pretest": "tsc -p tsconfig.test.json",
+    "test": "node --test \".test-build/tests/*.test.js\""
+  },
+  "dependencies": {
+    "next": "^16.3.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "papaparse": "^5.4.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/react": "^19.0.0",
+    "@types/node": "^20.12.12",
+    "@types/papaparse": "^5.3.14",
+    "tailwindcss": "^3.4.3",
+    "postcss": "^8.4.38",
+    "autoprefixer": "^10.4.19"
+  }
+}
