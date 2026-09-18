@@ -1,0 +1,19 @@
+# Dépendances
+node_modules/
+
+# Build Next.js
+.next/
+out/
+*.tsbuildinfo
+
+# Environnement (ne jamais envoyer de clé sur GitHub)
+.env
+.env.local
+.env*.local
+
+# Système
+.DS_Store
+Thumbs.db
+
+# Sortie de compilation des tests
+.test-build/
