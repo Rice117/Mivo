@@ -54,6 +54,29 @@ corrections d'ici vers là-bas, fichier par fichier. Demande à Riche avant.
 
 ---
 
+## 1 bis. Riche travaille sur Windows, en double-cliquant
+
+Elle ne maîtrise pas GitHub et ne veut pas avoir à l'apprendre pour l'instant
+— elle s'en occupera quand le travail sera fini. Son chemin habituel, c'est :
+un dossier sur le disque C:, et un fichier sur lequel elle double-clique.
+
+`DEMARRER-WINDOWS.bat` à la racine est ce fichier. Il vérifie Node.js, lance
+`scripts/reparer-package-json.mjs`, installe au premier lancement, puis ouvre
+le navigateur. **Garde-le fonctionnel** : si tu changes la structure du projet
+ou les scripts npm, mets-le à jour dans le même lot.
+
+Contraintes à respecter pour ce lanceur : `.bat` et non `.ps1` (la politique
+d'exécution PowerShell la bloque), fichier en **ASCII pur avec fins de ligne
+CRLF** (elle a déjà été bloquée par un fichier enregistré en UTF-16), et
+l'auto-réparation avant tout démarrage — elle l'a demandée explicitement.
+
+Quand tu livres un lot, fournis aussi un **zip complet et vérifié** (extrais-le
+et fais tourner l'installation, les tests et la construction depuis la copie
+extraite avant de l'envoyer). Des zips vides lui ont déjà fait perdre tout son
+travail.
+
+---
+
 ## 2. Comment vérifier ton travail (obligatoire avant tout push)
 
 ```bash

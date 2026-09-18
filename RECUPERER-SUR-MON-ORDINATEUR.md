@@ -3,14 +3,29 @@
 À savoir d'abord : **Claude travaille dans le nuage, pas sur ton ordinateur.**
 Rien de ce qui est écrit pendant une session en ligne n'arrive tout seul sur
 ton disque. C'est pour ça que tu ne vois rien apparaître dans tes dossiers.
-Le passage se fait par GitHub, ou par le zip téléchargé.
+Le passage se fait par un zip téléchargé, ou par GitHub.
 
 Rappel de ta règle : **toujours travailler sur le disque C:**, jamais depuis
 une clé USB.
 
 ---
 
-## Méthode 1 — GitHub Desktop (la meilleure)
+## Méthode 1 — Le zip et le double-clic (celle à utiliser)
+
+1. Télécharge le zip envoyé dans la conversation.
+2. Décompresse-le dans un dossier du **disque C:**, par exemple
+   `C:\Projets\Azuska-Z`.
+3. Ouvre le dossier et **double-clique sur `DEMARRER-WINDOWS.bat`**.
+4. Une fenêtre noire s'ouvre, puis le navigateur s'ouvre tout seul sur
+   l'application.
+
+Le premier démarrage installe les composants (quelques minutes, avec
+internet). Les fois suivantes, c'est immédiat. Pour arrêter : ferme la
+fenêtre noire. Tout est aussi expliqué dans `LIRE-MOI-DABORD.txt`.
+
+---
+
+## Méthode 2 — GitHub Desktop (plus tard, quand tu voudras)
 
 C'est celle à privilégier : tes dossiers restent liés à GitHub, et la
 prochaine mise à jour sera un simple clic.
@@ -40,7 +55,7 @@ puis ouvrir http://localhost:3000 dans le navigateur.
 
 ---
 
-## Méthode 2 — Télécharger le zip depuis GitHub
+## Méthode 3 — Télécharger le zip depuis GitHub
 
 Si GitHub Desktop pose problème, ou depuis l'iPad :
 
@@ -50,11 +65,11 @@ Si GitHub Desktop pose problème, ou depuis l'iPad :
 4. Décompresse le zip dans un dossier sur le disque **C:**
 
 Inconvénient : ce dossier n'est pas relié à GitHub, il faudra retélécharger
-à chaque mise à jour. C'est pour ça que la méthode 1 est meilleure.
+à chaque mise à jour.
 
 ---
 
-## Méthode 3 — Depuis une session Claude sur ton ordinateur
+## Méthode 4 — Depuis une session Claude sur ton ordinateur
 
 Si tu rallumes ton ordinateur et que tu ouvres Claude Code dessus, tu peux
 lui demander :
@@ -70,6 +85,8 @@ Cette session-là, elle, travaille bien sur ton disque.
 
 Dans le dossier récupéré, tu dois trouver à la racine :
 
+- `DEMARRER-WINDOWS.bat`
+- `LIRE-MOI-DABORD.txt`
 - `CLAUDE.md`
 - `CORRECTIONS-2026-09-18.md`
 - `README.md`

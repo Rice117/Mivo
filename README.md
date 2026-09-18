@@ -6,6 +6,12 @@ de ce que le précédent a réellement produit.
 
 ## Démarrer
 
+Sur Windows : **double-clique sur `DEMARRER-WINDOWS.bat`** à la racine du
+dossier. Il vérifie Node.js, répare `package.json` si besoin, installe ce qui
+manque au premier lancement, puis ouvre le navigateur tout seul.
+
+En ligne de commande (Mac, Linux, ou si tu préfères) :
+
 ```bash
 cd frontend
 npm install

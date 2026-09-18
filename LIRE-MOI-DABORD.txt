@@ -1,0 +1,70 @@
+﻿AZUSKA Z - a lire en premier
+============================
+
+Ce dossier contient l'application complete. Il n'y a rien a comprendre
+et rien a installer a la main.
+
+
+CE QUE TU DOIS FAIRE
+--------------------
+
+1. Mets ce dossier sur le disque C: de ton ordinateur.
+   Par exemple : C:\Projets\Azuska-Z
+   (jamais depuis une cle USB)
+
+2. Ouvre le dossier et double-clique sur le fichier :
+
+       DEMARRER-WINDOWS.bat
+
+3. C'est tout. Une fenetre noire s'ouvre, puis ton navigateur
+   s'ouvre tout seul sur l'application.
+
+Pour arreter : ferme la fenetre noire.
+Pour redemarrer plus tard : double-clique a nouveau sur le meme fichier.
+
+
+LA PREMIERE FOIS
+----------------
+
+Le tout premier demarrage installe les composants necessaires.
+Cela prend quelques minutes et demande une connexion internet.
+Les fois suivantes, le demarrage est immediat, meme sans internet.
+
+Si l'ordinateur dit que Node.js n'est pas installe :
+va sur https://nodejs.org, telecharge la version marquee LTS,
+installe-la en cliquant Suivant jusqu'au bout, puis double-clique
+a nouveau sur DEMARRER-WINDOWS.bat.
+
+
+COMMENT UTILISER L'APPLICATION
+------------------------------
+
+1. Importer  : charge ton fichier de ventes (CSV, Excel ou JSON).
+               L'application trouve toute seule les colonnes de chiffres,
+               tu choisis celle a analyser.
+
+2. Ensuite, les pages Analyse, Marketing, Design et Publicite
+   travaillent toutes sur TES chiffres.
+
+3. Centre de commande : ecris ta demande en francais, par exemple
+   "analyse mes ventes et prepare une campagne publicitaire".
+   La plateforme te montre le plan, puis s'arrete pour te demander
+   confirmation avant toute action sensible.
+
+
+SI QUELQUE CHOSE NE VA PAS
+--------------------------
+
+Ne recommence rien toi-meme : garde la fenetre noire ouverte,
+prends une photo du message affiche, et envoie-la.
+
+
+CE QUE CETTE VERSION NE FAIT PAS ENCORE
+---------------------------------------
+
+- Le cerveau IA n'est pas branche : les agents calculent, ils ne
+  reflechissent pas encore.
+- Ce qui est affiche repart de zero quand tu recharges la page.
+- La connexion par compte n'est pas encore active.
+
+Le detail complet est dans le fichier CORRECTIONS-2026-09-18.md
