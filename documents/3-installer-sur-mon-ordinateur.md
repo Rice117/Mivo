@@ -15,13 +15,14 @@ une clé USB.
 1. Télécharge le zip envoyé dans la conversation.
 2. Décompresse-le dans un dossier du **disque C:**, par exemple
    `C:\Projets\Azuska-Z`.
-3. Ouvre le dossier et **double-clique sur `DEMARRER-WINDOWS.bat`**.
+3. Ouvre le dossier et **double-clique sur `DEMARRER.bat`**.
 4. Une fenêtre noire s'ouvre, puis le navigateur s'ouvre tout seul sur
    l'application.
 
 Le premier démarrage installe les composants (quelques minutes, avec
 internet). Les fois suivantes, c'est immédiat. Pour arrêter : ferme la
-fenêtre noire. Tout est aussi expliqué dans `LIRE-MOI-DABORD.txt`.
+fenêtre noire. Tout est aussi expliqué dans `LIRE-MOI.txt`. Pour les mises à jour suivantes,
+c'est `METTRE-A-JOUR.bat` — le dossier ne bouge plus jamais.
 
 ---
 
@@ -40,7 +41,7 @@ prochaine mise à jour sera un simple clic.
    **`claude/claude-rc-j0u7hc`**.
 5. Clique sur **`Pull origin`** s'il le propose.
 
-Les dossiers `frontend/`, `backend/`, `captures-iphone/` et les fichiers
+Les dossiers `frontend/`, `documents/`, `archives/` et les fichiers
 `.md` apparaissent alors dans ton dossier sur le disque C:.
 
 Pour faire tourner l'application ensuite :
@@ -85,12 +86,13 @@ Cette session-là, elle, travaille bien sur ton disque.
 
 Dans le dossier récupéré, tu dois trouver à la racine :
 
-- `DEMARRER-WINDOWS.bat`
-- `LIRE-MOI-DABORD.txt`
+- `DEMARRER.bat`
+- `METTRE-A-JOUR.bat`
+- `LIRE-MOI.txt`
 - `CLAUDE.md`
 - `CORRECTIONS-2026-09-18.md`
 - `README.md`
-- `captures-iphone/` (4 images)
+- `documents/captures-iphone/` (4 images)
 - `frontend/` avec un dossier `tests/` dedans
 
 Et dans `frontend/`, ces trois commandes doivent passer :

@@ -19,16 +19,18 @@ if errorlevel 1 goto echec
 cd frontend
 
 if not exist "node_modules" goto installer
+if exist ".installation-requise" goto installer
 goto demarrer
 
 :installer
 echo.
-echo   Premier demarrage : installation des composants.
+echo   Installation des composants.
 echo   Cela prend quelques minutes et demande une connexion internet.
 echo   Les fois suivantes, ce sera immediat.
 echo.
 call npm install
 if errorlevel 1 goto echec_installation
+if exist ".installation-requise" del ".installation-requise"
 echo.
 echo   Installation terminee.
 

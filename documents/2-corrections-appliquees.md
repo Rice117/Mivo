@@ -20,7 +20,7 @@ Suite à l'audit (`AUDIT-azuska-z-2026-09-18.md`), tous les défauts relevés on
 Le parcours complet a été joué automatiquement dans un vrai navigateur, au
 format iPhone : import d'un CSV de ventes en francs guinéens → choix de la
 colonne → chaîne des agents → Centre de commande avec validation. Les images
-sont dans `captures-iphone/`.
+sont dans `documents/captures-iphone/`.
 
 **Ce qui n'a pas pu être vérifié**, et que je n'affirme donc pas : le rendu sur
 un **vrai** iPhone (le navigateur utilisé est Chromium au format iPhone, pas

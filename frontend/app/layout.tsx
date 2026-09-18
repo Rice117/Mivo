@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
-import { Nav } from "./ui";
+import { Nav, PiedDePage } from "./ui";
 
 export const metadata: Metadata = {
   title: "Azuska Z",
@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-slate-950 text-slate-100 antialiased">
         <Nav />
         {children}
+        <PiedDePage />
       </body>
     </html>
   );

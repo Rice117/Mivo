@@ -13,6 +13,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { VERSION } from "./version";
 
 const LINKS = [
   { href: "/", label: "Accueil" },
@@ -209,5 +210,16 @@ export function AgentConversation({
         ))}
       </ol>
     </Card>
+  );
+}
+
+// Affiché en bas de chaque écran : indispensable quand plusieurs copies du
+// projet cohabitent sur l'ordinateur. Si ce numéro ne change pas après une
+// mise à jour, c'est que la mise à jour n'a pas pris.
+export function PiedDePage() {
+  return (
+    <footer className="border-t border-slate-900 px-4 py-5 pb-[calc(1.25rem+env(safe-area-inset-bottom))] text-center">
+      <p className="text-[13px] text-slate-600">Azuska Z — version {VERSION}</p>
+    </footer>
   );
 }

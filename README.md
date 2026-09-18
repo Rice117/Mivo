@@ -6,7 +6,7 @@ de ce que le précédent a réellement produit.
 
 ## Démarrer
 
-Sur Windows : **double-clique sur `DEMARRER-WINDOWS.bat`** à la racine du
+Sur Windows : **double-clique sur `DEMARRER.bat`** à la racine du
 dossier. Il vérifie Node.js, répare `package.json` si besoin, installe ce qui
 manque au premier lancement, puis ouvre le navigateur tout seul.
 
@@ -43,6 +43,8 @@ qui évite qu'un déploiement échoue sans qu'on comprenne pourquoi.
 ## Comment c'est organisé
 
 ```
+DEMARRER.bat      ouvrir l'application
+METTRE-A-JOUR.bat installer une nouvelle version dans ce même dossier
 frontend/
   app/            les écrans (+ ui.tsx : les briques communes, pensées pour l'iPhone)
   core/           le moteur : types, canaux, orchestrateur, planificateur, exécution
@@ -52,8 +54,20 @@ frontend/
   database/       socle prêt pour Supabase (pas encore branché)
   i18n/           6 langues écrites, pas encore utilisées par les écrans
   tests/          les tests automatiques
-backend/          ancienne architecture Python — voir backend/LIRE-D-ABORD.md
+scripts/          démarrage, réparation automatique, mise à jour
+documents/        audit, corrections, marche à suivre, captures iPhone
+archives/         ancien zip d'août, ancien backend Python — conservés
 ```
+
+## Mettre à jour
+
+Le dossier ne bouge jamais. On télécharge le nouveau zip, on double-clique sur
+`METTRE-A-JOUR.bat`, puis sur `DEMARRER.bat`. Le script vérifie le zip avant
+d'écrire, sauvegarde l'existant dans `sauvegardes-automatiques/` et ne touche
+jamais à `mes-donnees/`.
+
+À chaque livraison : changer `frontend/app/version.ts`. Le numéro s'affiche en
+bas de chaque écran.
 
 ## Les deux règles à ne pas casser
 

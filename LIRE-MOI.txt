@@ -1,0 +1,117 @@
+﻿AZUSKA Z
+========
+
+Tout le projet tient dans CE dossier. Rien n'est a chercher ailleurs.
+
+
+CE QU'IL Y A DANS LE DOSSIER
+----------------------------
+
+  DEMARRER.bat        ->  ouvrir l'application
+  METTRE-A-JOUR.bat   ->  installer une nouvelle version
+  LIRE-MOI.txt        ->  ce fichier
+
+  frontend\           le programme
+  documents\          l'audit, les corrections, les captures d'ecran
+  archives\           les anciennes versions gardees, plus utilisees
+  scripts\            les outils de demarrage et de reparation
+
+  mes-donnees\                  cree au besoin - c'est a toi, jamais touche
+  sauvegardes-automatiques\     copies faites avant chaque mise a jour
+
+
+LA PREMIERE FOIS
+----------------
+
+1. Mets ce dossier sur le disque C: de ton ordinateur.
+   Par exemple : C:\Projets\Azuska-Z
+   (jamais depuis une cle USB)
+
+2. Double-clique sur   DEMARRER.bat
+
+3. Une fenetre noire s'ouvre, puis ton navigateur s'ouvre tout seul
+   sur l'application.
+
+Le tout premier demarrage installe les composants : quelques minutes,
+avec internet. Ensuite c'est immediat.
+
+Si l'ordinateur dit que Node.js n'est pas installe : va sur
+https://nodejs.org, telecharge la version marquee LTS, installe-la en
+cliquant Suivant jusqu'au bout, puis relance DEMARRER.bat
+
+
+LES FOIS SUIVANTES
+------------------
+
+Double-clique sur   DEMARRER.bat
+Pour arreter : ferme la fenetre noire.
+
+
+POUR METTRE A JOUR
+------------------
+
+Tu ne deplaces rien, tu ne recrees aucun dossier. Tu restes dans
+CE dossier.
+
+1. Telecharge le nouveau fichier Azuska-Z.zip (il peut rester dans
+   ton dossier Telechargements, ce n'est pas grave)
+
+2. Double-clique sur   METTRE-A-JOUR.bat
+
+   Il trouve tout seul le fichier le plus recent. Tu peux aussi
+   glisser le zip directement sur METTRE-A-JOUR.bat
+
+3. Double-clique sur   DEMARRER.bat
+
+La mise a jour :
+  - verifie le fichier AVANT de toucher a quoi que ce soit
+    (si le zip est abime, elle s'arrete et ne modifie rien) ;
+  - fait une sauvegarde de ta version actuelle dans
+    sauvegardes-automatiques\ (les 10 dernieres sont gardees) ;
+  - ne touche jamais a ton dossier mes-donnees\ ;
+  - t'affiche l'ancien et le nouveau numero de version.
+
+
+COMMENT SAVOIR QUELLE VERSION TU REGARDES
+-----------------------------------------
+
+Le numero de version est ecrit EN BAS DE CHAQUE ECRAN de l'application.
+
+    Azuska Z - version 2026.09.18
+
+Si ce numero n'a pas change apres une mise a jour, c'est que la mise a
+jour n'a pas pris : previens-moi.
+
+
+COMMENT UTILISER L'APPLICATION
+------------------------------
+
+1. Importer  : charge ton fichier de ventes (CSV, Excel ou JSON).
+               L'application trouve toute seule les colonnes de chiffres,
+               tu choisis celle a analyser.
+
+2. Les pages Analyse, Marketing, Design et Publicite travaillent
+   ensuite toutes sur TES chiffres.
+
+3. Centre de commande : ecris ta demande en francais, par exemple
+   "analyse mes ventes et prepare une campagne publicitaire".
+   La plateforme montre le plan, puis s'arrete pour te demander
+   confirmation avant toute action sensible.
+
+
+SI QUELQUE CHOSE NE VA PAS
+--------------------------
+
+Ne recommence rien toi-meme : garde la fenetre noire ouverte, prends
+une photo du message affiche, et envoie-la.
+
+
+CE QUE CETTE VERSION NE FAIT PAS ENCORE
+---------------------------------------
+
+- Le cerveau IA n'est pas branche : les agents calculent, ils ne
+  reflechissent pas encore.
+- Ce qui est affiche repart de zero quand tu recharges la page.
+- La connexion par compte n'est pas encore active.
+
+Le detail complet est dans   documents\2-corrections-appliquees.md

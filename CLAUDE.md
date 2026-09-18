@@ -54,13 +54,51 @@ corrections d'ici vers là-bas, fichier par fichier. Demande à Riche avant.
 
 ---
 
-## 1 bis. Riche travaille sur Windows, en double-cliquant
+## 1 bis. Organisation du dossier — ne jamais la disperser
+
+Riche a **plusieurs copies mélangées du projet sur son PC** (Téléchargements,
+C:\, Google Drive) et a demandé explicitement que tout tienne à un seul
+endroit, rangé. N'ajoute **rien** à la racine sans raison : les documents vont
+dans `documents/`, ce qui n'est plus utilisé dans `archives/`.
+
+```
+Azuska-Z/
+  DEMARRER.bat        LIRE-MOI.txt      README.md
+  METTRE-A-JOUR.bat   CLAUDE.md
+  frontend/     le programme
+  scripts/      démarrage, réparation, mise à jour
+  documents/    audit, corrections, marche à suivre, captures
+  archives/     ancien zip d'août, ancien backend Python
+  mes-donnees/                (créé au besoin — à elle, jamais écrasé)
+  sauvegardes-automatiques/   (10 copies tournantes, jamais écrasées)
+```
+
+## 1 ter. Le chemin de MISE À JOUR est aussi important que le code
+
+Règle venue de son projet Bénéf, qu'elle a payée cher : **tester le chemin de
+mise à jour d'un dossier existant, pas seulement l'installation neuve.**
+
+Elle ne recrée jamais un dossier. Son geste : télécharger le zip, double-cliquer
+sur `METTRE-A-JOUR.bat`, puis `DEMARRER.bat`. `scripts/mettre-a-jour.mjs`
+(Node pur, aucune dépendance) vérifie le zip **avant** d'écrire, sauvegarde
+l'existant dans `sauvegardes-automatiques/` (10 tournantes), n'écrase jamais
+`mes-donnees/`, et affiche l'ancienne et la nouvelle version.
+
+**À chaque livraison :** change `frontend/app/version.ts` (format
+`année.mois.jour`), et teste réellement la mise à jour sur une installation
+plus ancienne avant d'envoyer.
+
+Le numéro de version s'affiche **en bas de chaque écran** (`PiedDePage` dans
+`app/ui.tsx`). C'est ce qui lui permet de savoir quelle copie elle regarde et
+si la mise à jour a pris. Ne le retire jamais.
+
+## 1 quater. Riche travaille sur Windows, en double-cliquant
 
 Elle ne maîtrise pas GitHub et ne veut pas avoir à l'apprendre pour l'instant
 — elle s'en occupera quand le travail sera fini. Son chemin habituel, c'est :
 un dossier sur le disque C:, et un fichier sur lequel elle double-clique.
 
-`DEMARRER-WINDOWS.bat` à la racine est ce fichier. Il vérifie Node.js, lance
+`DEMARRER.bat` à la racine est ce fichier. Il vérifie Node.js, lance
 `scripts/reparer-package-json.mjs`, installe au premier lancement, puis ouvre
 le navigateur. **Garde-le fonctionnel** : si tu changes la structure du projet
 ou les scripts npm, mets-le à jour dans le même lot.
@@ -174,8 +212,8 @@ frontend/
   database/       socle prêt pour Supabase — pas encore branché
   i18n/           6 langues écrites — pas encore utilisées par les écrans
   tests/          33 tests automatiques
-backend/          ancienne API Python, plus utilisée — voir backend/LIRE-D-ABORD.md
-captures-iphone/  preuves visuelles prises dans un vrai navigateur
+archives/         ancien zip d'août et ancien backend Python — conservés, plus utilisés
+documents/        audit, corrections, marche à suivre, captures iPhone
 ```
 
 ---
